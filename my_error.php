@@ -11,11 +11,11 @@ countDown(11);
 
 function countDown($argument){
     try {
-        if($argument > 10){
+        if($argument > 10) {
             throw new Exception("er is iets fout gegaan!");
         }
     }catch(Exception $argument){
-        echo ("Er is iets fout gegaan");
+       error_log("er is iet fout gegaan");
     }
 
 }
